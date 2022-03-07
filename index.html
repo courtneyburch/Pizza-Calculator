@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Comparison Calculator</title>
+    <link rel="stylesheet" href="/styles.css">
+    
+</head>
+<!-- This is a tool that allows the user to compare different sizes of pizza to determine which is the better value. -->
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Pizza Comparison Tool</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat accusamus reiciendis quasi commodi repellendus, ipsam tempore accusantium odio, assumenda consequatur nostrum dolorum laudantium nam quod illo esse repellat hic pariatur sapiente odit voluptas autem nihil veniam ut! Excepturi nisi sequi, voluptate iste necessitatibus, vitae odit maxime temporibus laborum at numquam.
+            </p>
+            <div class="image invisible">
+                <img src="/images/vitalii-chernopyskyi-Oxb84ENcFfU-unsplash.jpg" alt="A pizza">
+            </div>
+            
+        </div>
+    
+
+        <div class="pizza1">
+            <h2>Pizza 1 Information</h2>
+            <h3>Shape</h3>
+            <div class="shape1">
+                
+                <input type="radio" id="round" name="shape1" value="round" checked>
+                <label for="round">Round</label>
+
+                <input type="radio" id="square" name="shape1" value="square">
+                <label for="square">Square</label>
+
+                <input type="radio" id="rectangle" name="shape1" value="rectangle">
+                <label for="rectangle">Rectangle</label>
+            
+                <p><button class="enter_dimensions" type="button" id="pizza1_shape">Enter Dimensions</button></p>
+            </div> <!--close pizza 1 shape container-->
+            
+            
+            <section class="pizza1_dimensions">
+    
+                <!--round pizza dimensions-->
+                <p class="pizza1_dimensions_round invisible">
+                    <label for="pizza1_round_radius">Pizza 1 Radius (Inches)</label>
+                    <input type="number" min="1" name="pizza1_round_radius" id="pizza1_round_radius">
+                </p> <!--End round dimensions-->
+    
+                <!--rectangular pizza dimensions-->
+                <p class="pizza1_dimensions_rectangle invisible"> 
+                    <label for="pizza1_rectangle_length">Pizza 1 Length (Inches)</label>
+                    <input type="number" min="1" name="pizza1_rectangle_length" id="pizza1_rectangle_length">
+                
+                    <label for="pizza1_rectangle_width">Pizza 1 width (Inches)</label>
+                    <input type="number" min="1" name="pizza1_rectangle_width" id="pizza1_rectangle_width">
+                </p> <!--End rectangular dimensions-->
+    
+                <!--square pizza dimensions-->
+                <p class="pizza1_dimensions_square invisible">
+                    <label for="pizza1_square_side">Pizza 1 Side Length (Inches)</label>
+                    <input type="number" min="1" name="pizza1_square_side" id="pizza1_square_side">
+                </p>
+
+                <p><button class="calculate_area" type="button" id="pizza1_calculate">Calculate</button></p>
+                <p class="pizza1_area invisible"></p>
+
+            </section> <!--close pizza1 dimensions container-->
+            
+
+
+        </div> <!--Close Pizza 1 Container-->
+
+    
+    </div> <!--Close main container-->
+
+
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
