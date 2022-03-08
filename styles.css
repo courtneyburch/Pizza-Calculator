@@ -1,28 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .invisible{
     display: none;
 }
+input[type='number']{
+    width: 2.5rem;
+}
+/* styles for mobile layout */
 .container{
-    display: grid;
-    grid-template-columns: (2, 1fr);
-    grid-auto-rows: minmax(200px, 50%);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.title_container{
+    font-family: 'Pacifico', cursive;
+    font-size: large;
+    margin-bottom: 1rem;
+    padding: 1rem 1rem;
 
 }
-.title{
-    display: grid;
-    grid-column: 1/3;
-    grid-row: 1/2;
-
+.title_image{
+    display: none;
+   
 }
 
-.pizza_info_1{
-    display: grid;
-    grid-column: 1;
-    grid-row: 2/3;
-}
 
-.pizza_info_2{
-    display: grid;
-    grid-column: 2;
-    grid-row: 2/3;
+.main_container{
+    font-family: Quicksand;
+} 
+.pizza_info_1, .pizza_info_2{
+    margin: 0.5rem;
+} 
+.pizza_dimensions_1, .pizza_dimensions_2, .pizza_shape_1, .pizza_shape_2, .pizza1_price, .pizza2_price{
+    padding: 0.5rem 0.5rem;
 }
+.rect_length, .rect_width{
+    padding-bottom: 1rem;
+}
+@media(min-width: 500px){
+    
+    .title_image{
+        display: block;
+        width: 100%;
+        margin: auto;
+        max-width: 200px;
+        max-height: 200px;
+    }
+}
+@media(min-width: 800px){
 
+    .main_container{
+        display: grid;
+        grid-template-columns: (2, 1fr);
+        grid-auto-rows: auto;
+    }
+    .title_container{
+        display: grid;
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    .title_container .title_image{
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+    .pizza_info_1{
+        display: grid;
+        grid-column: 1;
+        grid-row: 2/3;
+    }
+
+    .pizza_info_2{
+        display: grid;
+        grid-column: 2;
+        grid-row: 2/3;
+    }
+}
