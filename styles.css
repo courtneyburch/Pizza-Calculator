@@ -46,6 +46,7 @@ input[type='number']{
 .btn{
     padding: 0.5rem 0.5rem;
     margin-top: 0.5rem;
+    margin-right: 0.5rem;
     font-family: Quicksand;
     font-weight: bolder;
 }
@@ -53,6 +54,12 @@ input[type='number']{
     margin-bottom: 2rem;
     font-family: Quicksand;
     font-size:larger;
+}
+.instructions{
+    margin: 0.5rem 0;
+    font-family: Quicksand;
+    font-weight: lighter;
+    list-style-position: inside;
 }
 
 
