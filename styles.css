@@ -30,18 +30,25 @@ input[type='number']{
    
 }
 
-
 .main_container{
     font-family: Quicksand;
 } 
 .pizza_info_1, .pizza_info_2{
     margin: 0.5rem;
 } 
-.pizza_dimensions_1, .pizza_dimensions_2, .pizza_shape_1, .pizza_shape_2, .pizza1_qty, .pizza2_qty, .pizza1_price, .pizza2_price{
+.pizza_dimensions_1, .pizza_dimensions_2, .pizza_shape_1, .pizza_shape_2, .pizza1_qty, .pizza2_qty, .pizza1_price, .pizza2_price, .btn_container{
     padding: 0.5rem 0.5rem;
+    border: 1px solid red
 }
 .rect_length, .rect_width{
     padding-bottom: 1rem;
+}
+
+.btn{
+    padding: 0.5rem 0.5rem;
+    margin: 0.5rem;
+    font-family: Quicksand;
+    font-weight: bolder;
 }
 @media(min-width: 500px){
     
