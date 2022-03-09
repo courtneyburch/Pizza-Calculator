@@ -83,9 +83,21 @@ function calc(){
     } else {
         result = `Pizza 1 has a cost of $${unitCost1} per square inch and Pizza 2 has a cost of $${unitCost2} per square inch. <strong>Pizza 2 is a better value.</strong>`
     }
+    
     //append result to the main container
-    let displayResult = document.getElementById('results'); //create a div to display the result
+    let displayResult = document.getElementById('results'); //get reference to results div
     displayResult.classList.add('results'); //add class name for styling
-    displayResult.innerHTML += result; //append the result template
-    // document.getElementById('main').insertBefore(displayResult) //append the the bottom of the main container
+
+    //validate answer before it is displayed
+    if(!parseFloat(unitCost1) || !parseFloat(unitCost2)){ //if either value is falsy
+        
+        displayResult.innerHTML += "Please check entries and try again." //display error message
+
+    } else{
+        displayResult.innerHTML += result; //display the result
+    }
 }
+//add event listener to Reset button
+document.querySelector("#reset").addEventListener("click", clearInput)
+//function to clear inputs
+funcion
