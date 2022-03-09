@@ -63,7 +63,7 @@ function calc(){
     //calculate area of pizza 2
     if(shape2 == "round"){
         pizza2Diameter = document.querySelector('input[name="pizza2_round_diam"]').value;
-        pizza2Radius = pizza1Diameter / 2;
+        pizza2Radius = pizza2Diameter / 2;
         area2 = (Math.PI * pizza2Radius ** 2).toFixed(2);
     } else if(shape2 == "rectangle"){
         pizza2Length = document.querySelector('input[name="pizza2_rectangle_length"]').value;

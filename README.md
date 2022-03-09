@@ -1,5 +1,7 @@
 # Pizza-Calculator
-A tool to compare different pizzas and decide which one is the best value. Users can select a shape and enter dimensions, price, and quantity. The page will calculate the price per square inch and display which pizza is the best value. 
+A tool to compare different pizzas and decide which one is the best value. 
+I was inspired to make this tool after seeing an item online stating that one 18 inch round pizzas is "more pizza" than two 12 inch round pizza. Factoring in different prices makes it even more difficult to choose the best option.
+Users can select a shape and enter dimensions, price, and quantity. The page will calculate the price per square inch and display which pizza is the best value. 
 
 # CSS Features
 - mobile-first layout hides title image and stacks content
