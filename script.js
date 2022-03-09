@@ -100,4 +100,31 @@ function calc(){
 //add event listener to Reset button
 document.querySelector("#reset").addEventListener("click", clearInput)
 //function to clear inputs
-funcion
+
+function clearInput(){
+    //reset radio buttons to default value (round)
+    let radios = document.querySelectorAll('input[type="radio"]');
+    for(let i=0; i<radios.length; i++){ 
+        radios[i].checked = radios[i].defaultChecked;
+    }
+    //show the round dimensions and hide rectangular
+    show_round_dim_pizza1(); //reset shape or pizza1 to round
+    show_round_dim_pizza2(); //reset shape or pizza1 to round
+
+    //clear any dimensions that were entered    
+    document.querySelector('input[name="pizza1_round_diam"]').value = '';
+    document.querySelector('input[name="pizza1_rectangle_length"]').value = '';
+    document.querySelector('input[name="pizza1_rectangle_width"]').value = '';
+    document.querySelector('input[name="pizza2_round_diam"]').value = '';
+    document.querySelector('input[name="pizza2_rectangle_length"]').value = '';
+    document.querySelector('input[name="pizza2_rectangle_width"]').value = '';
+
+    //clear quantities
+    document.querySelector('input[name="pizza1_qty"]').value = '';
+    document.querySelector('input[name="pizza2_qty"]').value = '';
+
+    //clear prices
+    document.querySelector('input[name="pizza1_price"]').value = '';
+    document.querySelector('input[name="pizza2_price"]').value = '';
+    
+}
