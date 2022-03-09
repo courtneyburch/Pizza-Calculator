@@ -44,7 +44,7 @@ function calc(){
     if(shape1 == "round"){
         pizza1Diameter = document.querySelector('input[name="pizza1_round_diam"]').value;
         pizza1Radius = pizza1Diameter / 2;
-        area1 = Math.PI * pizza1Radius ** 2.toFixed(2);
+        area1 = (Math.PI * pizza1Radius ** 2).toFixed(2);
     } else if(shape1 == "rectangle"){
         pizza1Length = document.querySelector('input[name="pizza1_rectangle_length"]').value;
         pizza1Width = document.querySelector('input[name="pizza1_rectangle_width"]').value;
@@ -64,7 +64,7 @@ function calc(){
     if(shape2 == "round"){
         pizza2Diameter = document.querySelector('input[name="pizza2_round_diam"]').value;
         pizza2Radius = pizza1Diameter / 2;
-        area2 = Math.PI * pizza2Radius ** 2.toFixed(2);
+        area2 = (Math.PI * pizza2Radius ** 2).toFixed(2);
     } else if(shape2 == "rectangle"){
         pizza2Length = document.querySelector('input[name="pizza2_rectangle_length"]').value;
         pizza2Width = document.querySelector('input[name="pizza2_rectangle_width"]').value;
