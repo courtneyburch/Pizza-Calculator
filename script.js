@@ -20,6 +20,7 @@ function show_rect_dim_pizza2(){
 //function to calculate area of both pizzas and compare them, then display result
 document.querySelector("#calculate").addEventListener("click", calc);
 function calc(){
+    document.getElementById("results").innerHTML = '';//clear any previous results if necessary
 
     let area1 = 0; //area of pizza 1
     const shape1 = document.querySelector('input[name="shape1"]:checked').value; //get dimensions of pizza1
@@ -83,8 +84,8 @@ function calc(){
         result = `Pizza 1 has a cost of $${unitCost1} per square inch and Pizza 2 has a cost of $${unitCost2} per square inch. <strong>Pizza 2 is a better value.</strong>`
     }
     //append result to the main container
-    let displayResult = document.createElement('div'); //create a div to display the result
+    let displayResult = document.getElementById('results'); //create a div to display the result
     displayResult.classList.add('results'); //add class name for styling
-    displayResult.innerHTML = result; //append the result template
-    document.getElementById('container').appendChild(displayResult) //append the the bottom of the main container
+    displayResult.innerHTML += result; //append the result template
+    // document.getElementById('main').insertBefore(displayResult) //append the the bottom of the main container
 }

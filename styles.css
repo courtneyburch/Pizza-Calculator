@@ -63,45 +63,58 @@ input[type='number']{
 }
 
 
-/* medium screens with such as tablets will display the pizza logo at a smaller size */
+/* medium screens with such as tablets will display the pizza logo at a smaller size and the title below the logo*/
 @media(min-width: 500px){
     
     .title_image{
         display: block;
         width: 100%;
         margin: auto;
-        max-width: 200px;
-        max-height: 200px;
+        max-width: 100px;
+        max-height: 100px;
     }
 }
 
 /* larger screens will display pizza 1 and pizza 2 info side-by-side with a larger logo */
-@media(min-width: 800px){
+@media(min-width: 825px){
 
-    .main_container{
-        display: grid;
-        grid-template-columns: (2, 1fr);
-        grid-auto-rows: auto;
-    }
     .title_container{
         display: grid;
-        grid-column: 1/3;
-        grid-row: 1/2;
+        grid-template-columns: 1fr 3fr;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'Pacifico', cursive;
+        font-size: large;
+        margin-bottom: 1rem;
+        padding: 1rem 1rem;
+        
+    
     }
-    .title_container .title_image{
-        max-width: 300px;
-        max-height: 300px;
-    }
+    .title_image{
+        max-width: 200px;
+        max-height: 200px;
+        padding: 0.5rem 0.5rem;
 
+    }
+    .title_text{
+        padding: 0.5rem 0.5rem;
+    }
+   
+    .main_container{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        width: 50%
+        
+    }
     .pizza_info_1{
         display: grid;
         grid-column: 1;
-        grid-row: 2/3;
+        
     }
 
     .pizza_info_2{
         display: grid;
         grid-column: 2;
-        grid-row: 2/3;
-    }
+        
 }
