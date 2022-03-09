@@ -57,7 +57,7 @@ function calc(){
     totalCost1 = price1 * qty1;
 
     //calculate unit cost of pizza 1 and round to two decimal places
-    unitCost1 = (totalArea1 / totalCost1).toFixed(2);
+    unitCost1 = (totalCost1 / totalArea1).toFixed(2);
 
     //calculate area of pizza 2
     if(shape2 == "round"){
@@ -75,7 +75,7 @@ function calc(){
     totalCost2 = price2 * qty2;
 
     //calculate unit cost of pizza 2 and round to two decimal places
-    unitCost2 = (totalArea2 / totalCost2).toFixed(2);
+    unitCost2 = (totalCost2 / totalArea2).toFixed(2);
 
     //compare the two unit costs and decide which one is the best deal. Populate result string with correct outcome
     if(unitCost1 < unitCost2){

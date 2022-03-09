@@ -51,7 +51,7 @@ input[type='number']{
     font-weight: bolder;
 }
 .results{
-    margin-bottom: 2rem;
+    margin: 1rem 1rem 2rem 1rem;
     font-family: Quicksand;
     font-size:larger;
 }
