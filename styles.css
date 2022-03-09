@@ -37,7 +37,7 @@ input[type='number']{
 .pizza_info_1, .pizza_info_2{
     margin: 0.5rem;
 } 
-.pizza_dimensions_1, .pizza_dimensions_2, .pizza_shape_1, .pizza_shape_2, .pizza1_price, .pizza2_price{
+.pizza_dimensions_1, .pizza_dimensions_2, .pizza_shape_1, .pizza_shape_2, .pizza1_qty, .pizza2_qty, .pizza1_price, .pizza2_price{
     padding: 0.5rem 0.5rem;
 }
 .rect_length, .rect_width{
